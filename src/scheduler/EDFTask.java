@@ -14,7 +14,7 @@ public class EDFTask extends Task{
 	
 	@Override
 	public void updateDeadline(int current_time) {
-		this.deadline = current_time - this.getAbsolute_deadline();
+		this.deadline = this.getAbsolute_deadline() - current_time;
 	}
 
 	@Override
